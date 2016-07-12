@@ -9,8 +9,13 @@ rm ~/.vimrc
 cp ~/.vim/vim_configuration.conf ~/.vimrc
 
 git clone https://github.com/junegunn/goyo.vim.git ~/.vim/bundle/goyo.vim
-git clone https://github.com/ervandew/supertab ~/.vim/bundle/supertab
-wget https://raw.githubusercontent.com/AlexMax/.vim/master/colors/one.vim -O ~/.vim/colors/one.vim
+#git clone https://github.com/ervandew/supertab ~/.vim/bundle/supertab
+
+# For linux with wget
+#wget https://raw.githubusercontent.com/AlexMax/.vim/master/colors/one.vim -O ~/.vim/colors/one.vim
+
+# For linux without wget (Macs)
+curl https://raw.githubusercontent.com/AlexMax/.vim/master/colors/one.vim -o ~/.vim/colors/one.vim
 
 echo
 echo Setup complete 
